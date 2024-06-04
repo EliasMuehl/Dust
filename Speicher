@@ -1,0 +1,37 @@
+<fieldset>
+  <legend>Studiendaten</legend>
+  <div class="studien-daten">
+    <label for="studienBeginn">Studienbeginn</label>
+    <input type="date" name="studienBeginn" id="studienBeginn" />
+
+    <label for="studienEnde">Studienende</label>
+    <input type="date" name="studienEnde" id="studienEnde" />
+
+    <label for="kohorte">Kohorte (Jahrgang)</label>
+    <input type="text" name="kohorte" id="kohorte" />
+
+    <label for="tatsStudienEnde">Tatsächliches Studienende</label>
+    <input type="date" name="tatsStudienEnde" id="tatsStudienEnde" />
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Weitere Anmerkungen</legend>
+  <p>
+    <label for="issue">Anmerkungen:</label><br>
+    <textarea id="issue" name="issue" rows="10" cols="50" placeholder="Nutzen Sie dieses Feld für jegliche weitere Anmerkungen oder Erinnerungen..."></textarea>
+  </p>
+</fieldset>
+
+
+
+
+
+            Studienbeginn <input type="date" name="studienBeginn"/>
+            Studienende <input type="date" name="studienEnde"/>
+            Kohort (Jahrgang) <input type="text" name="kohorte"/>
+            tatsächliches Studienende <input type="date" name="tatsStudienEnde"/>
+            <p>
+                <label for="issue">Weitere Anmerkungen:</label><br>
+                <textarea id="issue" name="issue" rows="10" cols="50" placeholder="Nutzen Sie dieses Feld für jegliche weitere Anmerkungen oder Erinnerungen..."></textarea>
+            </p>

@@ -10,7 +10,7 @@
 <header>
     <img src="images/Logo.png" alt="TH Wildau Logo" class="logo">
     <h1 class="header-title">Duale Studenten Datenbank</h1>
-    
+
 </header>
 
 <main>
@@ -22,13 +22,145 @@
             <li><a href="praxispartner.html">Praxispartner</a></li>
         </ul>
     </nav>
-    
 
 
     <section class="hero">
         <h1>Studenten</h1>
     </section>
+
+    <h1>Neuen Student einfügen</h1>
+    <p>Fügen Sie in den folgenden Feldern die Daten des neuen Studenten ein.</p>
+
+    <form action="" method="GET">
+        <h3>Angaben zur Person</h3>
+        <form action="" method="GET">
+            <div class="personen-feld">
+                <label for="nachName">Name</label>
+                <input type="text" name="nachName" id="nachName"/>
+            </div>
+
+            <div class="personen-feld">
+                <label for="vorName">Vorname</label>
+                <input type="text" name="vorName" id="vorName"/>
+            </div>
+
+            <div class="personen-feld">
+                <label for="MatrNr">Matrikelnummer</label>
+                <input type="text" name="MatrNr" id="MatrNr"/>
+            </div>
+
+        </form>
+
+        <h4>Angaben zum Studium</h4>
+
+        <div class="personen-feld">
+            <label for="studienGang">Studiengang</label>
+            <input type="text" name="nachName" id="studienGang"/>
+        </div>
+        <div class="personen-feld">
+            <label for="kohorte">Kohorte (Jahrgang)</label>
+            <input type="text" name="kohorte" id="kohorte"/>
+        </div>
+
+
+        <style>
+            .personen-feld {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                margin-top: 20px;
+            }
+
+            .personen-feld label {
+                display: block;
+                margin-bottom: 5px;
+                text-align: left;
+            }
+
+            .personen-feld input {
+                width: 200px;
+            }
+        </style>
+
+        <div class="personen-feld">
+            Art der Integrierung
+        </div>
+
+        <p>
+            <input type="radio" id="option1" name="option" value="1">
+            <label for="option1">Ausbildungsintegrierend</label>
+        </p>
+        <p>
+            <input type="radio" id="option2" name="option" value="2">
+            <label for="option2">Praxisintegrierend</label>
+        </p>
+        </div>
+
+        <div class="studien-daten">
+            <div>
+                <label for="studienBeginn">Studienbeginn</label>
+                <input type="date" name="studienBeginn" id="studienBeginn"/>
+            </div>
+            <div></div>
+            <div>
+                <label for="studienEnde">Studienende</label>
+                <input type="date" name="studienEnde" id="studienEnde"/>
+            </div>
+            <div>
+                <label for="tatsStudienEnde">Tatsächliches Studienende</label>
+                <input type="date" name="tatsStudienEnde" id="tatsStudienEnde"/>
+            </div>
+
+            <style>
+                .studien-daten {
+                    display: flex; /* Flexbox aktivieren */
+                    flex-direction: column; /* Elemente in einer Spalte anordnen */
+                    margin-bottom: 10px; /* Abstand zwischen den Feldern hinzufügen */
+                }
+
+                .studien-daten label {
+                    display: block; /* Label über die gesamte Breite des Elements */
+                    margin-bottom: 5px;
+                    margin-top: 20px;
+                }
+
+                .studien-daten input {
+                    width: 200px; /* Breite für Felder festlegen */
+                }
+
+            </style>
+            <h4>PDF-Upload</h4>
+            <form action="/dein/upload/ziel" method="post" enctype="multipart/form-data">
+                <input type="file" name="pdfFile">
+                <input type="submit" value="Hochladen">
+            </form>
+
+            <div class="submit-button-container">
+                <input type="submit" value="Absenden">
+            </div>
+
+            <style>
+                .submit-button-container {
+                    position: relative;
+                    bottom: 0px; /* Adjust value based on container height */
+                        font-size: 18px;
+                        padding: 10px 20px;
+                        background-color: blue;
+                        color: white; /* Textfarbe weiß */
+                        border: none; /* Keine Umrandung */
+                        border-radius: 5px; /* Abgerundete Ecken */
+                        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+                    }
+
+
+                }
+
+                }
+</style>
+                </form>
 </main>
+
+
 <footer>
     <p>&copy; 2024 Technische Hochschule Wildau</p>
 </footer>
