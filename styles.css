@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Wildau font'; /* Geben Sie Ihrer benutzerdefinierten Schriftart einen Namen */
+    src: url('fonts/32CF48_1_0.woff2') format('woff2'); /* Verwenden Sie den relativen Pfad zur Schriftartdatei */
+}
+
+body {
+    font-family: Wildau font, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #005bae;
+}
+
+.logo {
+    height: 60px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.header-title {
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    color: white;
+}
+
+nav {
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #005bae;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 300px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    color: #003366;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-top: 10px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    background-color: #005bae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-container button:hover {
+    background-color: #004687;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: -75px;
+}
+
+.forgot-password a {
+    color: #0071c5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+.password-reset-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 300px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.password-reset-container h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+.password-reset-container input[type="email"] {
+    box-sizing: border-box;
+    width: calc(106% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.password-reset-container button {
+    padding: 10px 20px;
+    background-color: #0071c5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.password-reset-container button:hover {
+    background-color: #005b99;
+}
+
+footer {
+    background-color: #005b99;
+    font-size:x-small;
+    color: white;
+    padding: 3px 20px;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+}
